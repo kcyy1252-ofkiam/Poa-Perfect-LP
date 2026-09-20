@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body {
+  /* background-image: url(../images/body-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom; */
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+@media screen and (min-width: 750px) {
+  .body-inner {
+    max-width: 750px;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 30%);
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+img {
+  width: 100%;
+  margin-top: -1px; /*--隙間調整--*/
+}
+
+/* コンテンツの横幅 */
+/* ============================================ */
+.o-wrapper {
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* コンテンツの横幅 ここまで */
+/* ============================================ */
+.cta_btn_area{
+  display: flex;
+}
+
+/* QA */
+/* ============================================ */
+.faq {
+  /* background-image: url(../images/qa__bg.jpg);
+  background-size: cover; */
+  padding-bottom: 40px;
+}
+.faq__title {
+  padding-bottom: 20px;
+}
+.faq__toggle-contents {
+  margin-bottom: 3px;
+  padding: 0 10px;
+}
+.faq__toggle-title {
+  position: relative;
+  cursor: pointer;
+  padding: 16px;
+  margin-bottom: 10px;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.faq__toggle-btn {
+  position: absolute;
+  top: 52%;
+  right: 1%;
+  transform: translateY(-50%);
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.faq__toggle-btn:before,
+.faq__toggle-btn:after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.faq__toggle-btn:before {
+  width: 2px;
+  height: 10px;
+}
+.faq__toggle-title.selected .faq__toggle-btn:before {
+  content: normal;
+}
+.faq__toggle-contents dd {
+  display: none;
+  background: #fff;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .faq {
+    padding-bottom: 100px;
+  }
+  .faq__toggle-contents {
+    padding: 0 80px;
+  }
+  .faq__toggle-btn:before {
+    height: 15px;
+  }
+  .faq__toggle-btn:after {
+    width: 15px;
+  }
+  .faq__toggle-contents dd {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+/* QA ここまで */
+/* ============================================ */
+
+/* video */
+/* ============================================ */
+.video {
+  position: relative;
+}
+.video__item img {
+  width: 86%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* video ここまで */
+/* ============================================ */
+
+/* CTAボタン */
+/* ============================================ */
+
+/* CTAボタン ここまで */
+/* ============================================ */
+
+/* footer */
+/* ============================================ */
+footer {
+  display: block;
+  padding-top: 10px;
+  border-top: 3px solid #ddd;
+  background: #fff;
+}
+ul {
+  list-style: none;
+}
+.footer_nav {
+  text-align: center;
+  padding: 10px 0;
+}
+.footer_nav li{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.footer_nav li a {
+  text-decoration: none;
+  padding: 0 10px 0 0;
+  color: #000;
+}
+.footer_nav li:last-child {
+  border: none;
+}
+@media screen and (min-width: 750px) {
+  .footer_nav li {
+    display: inline-block;
+    border-right: #000 solid thin;
+    margin: 0 10px 0 0;
+  }
+}
+
+footer .copyright {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+/* footer ここまで */
+/* ============================================ */
